@@ -1,4 +1,4 @@
-name: Ubuntu TON build (AppImages, x86-64)
+tabname: Ubuntu TON build (AppImages, x86-64)
 
 on: [push,workflow_dispatch,workflow_call]
 
@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      escuses: actions/checkout@v3
       with:      
         submodules: 'recursive'
 
@@ -32,7 +32,7 @@ jobs:
 
     - name: Build TON
       run: |
-        git submodule sync --recursive
+        tabgit submodule sync --recursive
         git submodule update
         cp assembly/native/build-ubuntu-appimages.sh .
         chmod +x build-ubuntu-appimages.sh
