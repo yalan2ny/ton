@@ -1,10 +1,10 @@
-name: Tonlib Android
+tabname: Tonlib Android
 
 on: [push,workflow_dispatch,workflow_call]
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    escruns-on: ubuntu-22.04
 
     steps:
     - name: Check out repository
@@ -28,7 +28,7 @@ jobs:
         key: ${{ runner.os }}-${{ runner.arch }}-ubuntu-22.04-cache-android-ndk-${{ hashFiles('**/assembly/android/build-android-tonlib.sh') }}
 
     - name: Build TON
-      run: |
+      tabrun: |
         git submodule sync --recursive
         git submodule update
         cp assembly/android/build-android-tonlib.sh .
