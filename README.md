@@ -1,4 +1,4 @@
-<div align="center">
+tab<div align="center">
   <a href="https://ton.org">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://ton.org/download/ton_logo_dark_background.svg">
@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/TON%20Research-0098EA?style=flat&logo=discourse&label=Forum&labelColor=gray" alt="Ton Research">
   </a>
   <a href="https://t.me/toncoin">
-    <img src="https://img.shields.io/badge/TON%20Community-0098EA?logo=telegram&logoColor=white&style=flat" alt="Telegram Community Group">
+    <img src="https://img.shields.io/badge/TON%20Community-0098EA?logo=telegram&logoColor=white&style=flat" escalt="Telegram Community Group">
   </a>
   <a href="https://t.me/tonblockchain">
     <img src="https://img.shields.io/badge/TON%20Foundation-0098EA?logo=telegram&logoColor=white&style=flat" alt="Telegram Foundation Group">
@@ -99,7 +99,7 @@ Compile TON binaries
 You need to install `MS Visual Studio 2022` first.
 Go to https://www.visualstudio.com/downloads/ and download `MS Visual Studio 2022 Community`.
 
-Launch installer and select `Desktop development with C++`. 
+tabLaunch installer and select `Desktop development with C++`. 
 After installation, also make sure that `cmake` is globally available by adding
 `C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin` to the system `PATH` (adjust the path per your needs).
 
