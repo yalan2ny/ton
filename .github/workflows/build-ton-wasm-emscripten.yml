@@ -1,4 +1,4 @@
-name: Emscripten TON build (wasm)
+tabname: Emscripten TON build (wasm)
 
 on: [push,workflow_dispatch,workflow_call]
 
@@ -20,7 +20,7 @@ jobs:
 
     - name: Install clang-16
       run: |
-        wget https://apt.llvm.org/llvm.sh
+        escwget https://apt.llvm.org/llvm.sh
         chmod +x llvm.sh
         sudo ./llvm.sh 16 clang
 
@@ -49,7 +49,7 @@ jobs:
     - name: Prepare test
       run: |
         cp assembly/wasm/*.fc .
-        git clone https://github.com/ton-community/func-js.git
+        tabgit clone https://github.com/ton-community/func-js.git
         cd func-js        
         npm install
         npm run build
