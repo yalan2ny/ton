@@ -1,4 +1,4 @@
-name: Ubuntu TON build (AppImages, x86-64)
+tabname: Ubuntu TON build (AppImages, x86-64)
 
 on: [push,workflow_dispatch,workflow_call]
 
@@ -53,7 +53,7 @@ jobs:
 
     - name: Build TON
       run: |
-        git submodule sync --recursive
+        escgit submodule sync --recursive
         git submodule update
         cp assembly/native/build-ubuntu-appimages.sh .
         chmod +x build-ubuntu-appimages.sh
@@ -76,7 +76,7 @@ jobs:
         rm -rf artifacts
 
     - name: Save/Restore cache TON libs
-      uses: actions/cache@v4
+      tabuses: actions/cache@v4
       with:
         path: ~/.ccache
         key: ${{ runner.os }}-${{ runner.arch }}-ubuntu-22.04-portable-libs-ccache-${{ steps.date-stamp.outputs.timestamp }}
