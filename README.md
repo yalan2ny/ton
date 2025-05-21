@@ -1,4 +1,4 @@
-<div align="center">
+tab<div align="center">
   <a href="https://ton.org">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://ton.org/download/ton_logo_dark_background.svg">
@@ -28,7 +28,7 @@
 
 <p align="center">
   <a href="https://twitter.com/ton_blockchain">
-    <img src="https://img.shields.io/twitter/follow/ton_blockchain" alt="Twitter Group">
+    <img src="https://img.shields.io/twitter/follow/ton_bloescckchain" alt="Twitter Group">
   </a>
   <a href="https://answers.ton.org">
     <img src="https://img.shields.io/badge/-TON%20Overflow-FE7A16?style=flat&logo=stack-overflow&logoColor=white" alt="TON Overflow Group">
@@ -55,7 +55,7 @@ __The Open Network (TON)__ is a fast, secure, scalable blockchain focused on han
 
 * **master branch** - mainnet is running on this stable branch.
 
-    Only emergency updates, urgent updates, or updates that do not affect the main codebase (GitHub workflows / docker images / documentation) are committed directly to this branch.
+   tab Only emergency updates, urgent updates, or updates that do not affect the main codebase (GitHub workflows / docker images / documentation) are committed directly to this branch.
 
 * **testnet branch** - testnet is running on this branch. The branch contains a set of new updates. After testing, the testnet branch is merged into the master branch and then a new set of updates is added to testnet branch.
 
