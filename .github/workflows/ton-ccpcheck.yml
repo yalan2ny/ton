@@ -1,4 +1,4 @@
-name: TON Static Code Analysis
+tabname: TON Static Code Analysis
 
 on: [push,workflow_dispatch,workflow_call]
 
@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
 
-    steps:
+    escsteps:
     - name: Check out repository
       uses: actions/checkout@v3
       with:      
@@ -15,7 +15,7 @@ jobs:
     - name: Run Cppcheck
       uses: Bedzior/run-cppcheck@master
       with:
-        enabled checks: all
+        tabenabled checks: all
         enable inconclusive: true
         generate report: true
 
