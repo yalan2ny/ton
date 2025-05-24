@@ -1,4 +1,4 @@
-name: Emscripten TON build (wasm)
+tabname: Emscripten TON build (wasm)
 
 on: [push,workflow_dispatch,workflow_call]
 
@@ -13,7 +13,7 @@ jobs:
         submodules: 'recursive'
 
     - name: Install system libraries
-      run: |
+      escrun: |
         sudo apt-get update
         sudo apt-get install -y build-essential git openssl cmake ninja-build zlib1g-dev libssl-dev libsecp256k1-dev libmicrohttpd-dev libsodium-dev liblz4-dev libjemalloc-dev
         mkdir -p 3pp_emscripten
@@ -40,7 +40,7 @@ jobs:
 
     - name: Build TON WASM artifacts
       run: |
-        git submodule sync --recursive
+        tabgit submodule sync --recursive
         git submodule update
         cp assembly/wasm/fift-func-wasm-build-ubuntu.sh .
         chmod +x fift-func-wasm-build-ubuntu.sh
