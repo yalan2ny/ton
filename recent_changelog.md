@@ -1,17 +1,12 @@
-## 2024.10 Update
-
-1. Parallel write to celldb: substantial improvement of sync and GC speed, especially with slow disks.
-2. Decreased network traffic: only first block candidate is sent optimistically.
-3. Improved channel creation and dht lookups, introduction of semi-private overlays
-4. New LS dispatch queue related methods and improvement security
-5. Fixing recursion in TVM continuations
-6. Improved stats for actors, validator sessions, perf counters, overlays, adnl, rocksdb
-7. Migration to C++20
-8. Improved block size estimates: account for depth in various structures
-9. Fix bug with `<<` optimization in FunC
-10. Minor changes of TVM which will be activated by `Config8.version >= 9`
-11. Multiple minor improvements
-
-Besides the work of the core team, this update is based on the efforts of @krigga (emulator), Arayz @ TonBit (LS security, TVM recursion), @ret2happy (UB in BLST).
+## 2025.02 Update
+1. Series of improvement/fixes for `Config8.version >= 9`, check [GlobalVersions.md](./doc/GlobalVersions.md)
+2. Fix for better discovery of updated nodes' (validators') IPs: retry dht queries
+3. Series of improvements for extra currency adoption: fixed c7 in rungetmethod, reserve modes
+4. TVM: Fix processing continuation control data on deep jump
+5. A few fixes of tl-b schemes: crc computation, incorrect tag for merkle proofs, advance_ext, NatWidth print
+6. Emulator improvements: fix setting libraries,  extracurrency support
+7. Increase of gas limit for unlocking highload-v2 wallets locked in the beginning of 2024
+8. Validator console improvement: dashed names, better shard formats
 
 
+Besides the work of the core team, this update is based on the efforts of  @dbaranovstonfi from StonFi(libraries in emulator), @Rexagon (ret on deep jumps), @tvorogme from DTon (`advance_ext`), Nan from Zellic (`stk_und` and JNI)
